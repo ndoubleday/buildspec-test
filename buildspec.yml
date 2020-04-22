@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "this is the install phase"
+  build:
+    commands:
+      - echo "now its building" 
+  post_build:
+    commands:
+      - echo "post build time!"
+artifacts:
+  files:
+    - build*/**
+  discard-paths: yes
